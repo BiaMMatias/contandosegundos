@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.container {
+  background: url("/img/ceu.jpg");
+  background-size: cover;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.aviao {
+  height: 100vh;
+  left: -3000px;
+}
+
+.aviao img {
+  width: 500px;
+  height: -moz-min-content;
+  height: min-content;
+  left: -300px;
+  top: 250px;
+  position: absolute;
+  animation-name: fly;
+  animation-duration: 15s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.coracao img {
+  width: 200px;
+  height: -moz-min-content;
+  height: min-content;
+  left: 800px;
+  top: 55px;
+  position: absolute;
+}
+
+.nuvem img {
+  width: 300px;
+  height: -moz-min-content;
+  height: min-content;
+  left: 50px;
+  top: 20px;
+  position: absolute;
+}
+
+.nuvem1 img {
+  width: 300px;
+  height: -moz-min-content;
+  height: min-content;
+  left: 350px;
+  top: 20px;
+  position: absolute;
+}
+
+.nuvem2 img {
+  width: 300px;
+  height: -moz-min-content;
+  height: min-content;
+  right: 150px;
+  top: 0px;
+  position: absolute;
+  animation-name: cloud1;
+  animation-duration: 15s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.nuvem3 img {
+  width: 300px;
+  height: -moz-min-content;
+  height: min-content;
+  left: 690px;
+  top: 13px;
+  position: absolute;
+  animation-name: cloud2;
+  animation-duration: 15s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fly {
+  100% {
+    transform: translateX(calc(100vw + 400px));
+  }
+}
+@keyframes cloud1 {
+  100% {
+    transform: translateX(150px);
+  }
+}
+@keyframes cloud2 {
+  100% {
+    transform: translateX(-250px);
+  }
+}/*# sourceMappingURL=style.css.map */
